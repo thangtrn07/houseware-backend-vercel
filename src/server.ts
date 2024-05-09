@@ -55,7 +55,7 @@ class App {
       this.app.use(cookieParser());
       this.app.use(helmet());
       this.app.use(compression());
-      this.app.set("trust proxy", 1);
+      this.app.set('trust proxy', 1);
 
       const store = new this.MongoDBStore({
          uri: MONGOOSE_URI,
@@ -68,13 +68,13 @@ class App {
             secret: SESSION_KEY,
             resave: false,
             saveUninitialized: false,
-            proxy: true, 
+            proxy: true,
             cookie: {
                secure: true,
                httpOnly: true,
                maxAge: 1000 * 60 * 60 * 24 * 7,
-               sameSite: 'none',
-             },
+               sameSite: 'none'
+            }
          })
       );
 
@@ -85,6 +85,7 @@ class App {
    };
 
    private initializeRoutes = () => {
+      this.app.get('/', (req, res) => res.send('Hello'));
       controllerRegister(this.app, [
          AuthController,
          UserController,
