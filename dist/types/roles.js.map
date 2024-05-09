@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/types/roles.ts"],"sourcesContent":["export enum Roles {\r\n   ADMIN = 'admin',\r\n   STAFF = 'staff'\r\n}\r\n"],"names":["Roles"],"rangeMappings":";;;;;;;;;;;;;;","mappings":";;;;;;;;;;;UAAYA;;;GAAAA,UAAAA"}

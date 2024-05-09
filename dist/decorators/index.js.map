@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/decorators/index.ts"],"sourcesContent":["export { default as Controller } from './Controller';\r\nexport * from './Controller';\r\nexport * from './Methods';\r\n"],"names":["Controller"],"rangeMappings":";;;;;;;;;;;","mappings":";;;;+BAAoBA;;;eAAAA,mBAAU;;;kEAAQ;qBAExB"}
