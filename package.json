@@ -4,7 +4,7 @@
    "main": "server.js",
    "license": "MIT",
    "scripts": {
-      "start": "yarn run build && cross-env NODE_ENV=production node dist/server.js",
+      "start": "cross-env NODE_ENV=production nodemon",
       "dev": "cross-env NODE_ENV=development nodemon",
       "build": "rimraf ./dist && swc ./src -d dist --source-maps --strip-leading-paths",
       "build:tsc": "rimraf ./dist && tsc && tsc-alias",
